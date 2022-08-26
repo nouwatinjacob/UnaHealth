@@ -1,0 +1,11 @@
+env
+db.sqlites3
+.env
+readings/__pycache__/
+users/__pycache__/
+users/migrations/__pycache__/
+readings/migrations/__pycache__/
+unahealth/__pycache__/
+__pycache__/
+*.pyc
+.DS_Store
