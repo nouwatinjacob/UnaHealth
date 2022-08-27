@@ -15,6 +15,11 @@ class ReadingList(generics.ListCreateAPIView):
             "recording_type": "0",
             "glucose_value_history": "138",
             "glucose_scan": ""
+        
+        To list glucose levels
+        use ?user_id=aaaa.aaaa.aaa to filter for levels belonging to the user.
+        use ?start=2021-12-12&stop=2021-12-12 to filter for levels within the date range.
+        --------------------------
     
     """
     serializer_class = ReadingsSerializer
@@ -49,5 +54,7 @@ class ReadingList(generics.ListCreateAPIView):
 
 
 class ReadingDetails(generics.RetrieveAPIView):
+    """Retrieve the details of a particular glucose level record
+    """
     queryset = Reading.objects.all()
     serializer_class = ReadingsSerializer
