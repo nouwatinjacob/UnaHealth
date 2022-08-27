@@ -1,6 +1,6 @@
 env
 db.sqlites3
-.env
+.env/
 readings/__pycache__/
 users/__pycache__/
 users/migrations/__pycache__/
